@@ -1,0 +1,82 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 3.9rem 2.7rem 0;
+  background: url(/assets/img/head-keyvisual.png) no-repeat;
+  background-position: right;
+  padding-bottom: 10rem;
+  background-position: 91%;
+}
+
+
+
+.logo-wrapper {
+  width: 50%;
+
+}
+
+
+.social_info {
+  @include font-base-bold;
+  text-align: right;
+  width: 50%;
+}
+
+.social_ico {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 20px;
+
+
+}
+
+.ico-wrapper {
+  margin-left: 20px;
+  margin-top: 15px;
+  width: 30px;
+  height: 30px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.header-content {
+  width: 100%;
+  margin-top: 58px;
+}
+
+.header-content_block_text {
+  @include utp-text;
+
+
+}
+
+.header-content_block:nth-child(2) .header-content_block_text {
+  font-size: 78px;
+}
+
+
+
+.header-content_block .main-button {
+  margin-top: 58px;
+}
+
+.first-bg-screen {
+  width: 100%;
+  background: url(/assets/img/img-6984-22-05-19-02-58.png) no-repeat;
+  background-position:right;
+  position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      opacity: .3;
+      right: 0;
+      background: radial-gradient(ellipse 65% 165% at right, $light-peach 94%, transparent 5%);
+      
+    }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "new-project",
+  "version": "1.0.0",
+  "description": "me",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d dist --presets es2015"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "gulp": "^4.0.1",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-imagemin": "^6.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-util": "^3.0.8",
+    "gulp-watch-sass": "^1.4.1"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Poylar/test-work.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Poylar/test-work/issues"
+  },
+  "homepage": "https://github.com/Poylar/test-work#readme"
+}

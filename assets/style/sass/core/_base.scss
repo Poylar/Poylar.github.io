@@ -1,0 +1,26 @@
+@import 'core/_settings';
+@import 'core/_mixins';
+html,
+body,
+#wrapper {
+  height: 100%;
+}
+
+body > #wrapper {
+  height: auto;
+  min-height: 100%;
+}
+
+body {
+  font-size: $font-base;
+  @include font-base;
+}
+
+body,
+input,
+button,
+textarea {
+  -webkit-appearance: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

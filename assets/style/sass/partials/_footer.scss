@@ -1,0 +1,25 @@
+.footer {
+  width: 100%;
+  background-color: $black;
+
+  .container {
+    padding-bottom: 25px;
+  }
+}
+
+.footer-logo-block {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.footer-logo-block_item {
+  color: $white;
+
+  &:last-child {
+    margin-top: 55px; 
+    font-size: 14px;
+    line-height: 1.5;
+ 
+  }
+}

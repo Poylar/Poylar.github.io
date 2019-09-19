@@ -1,0 +1,152 @@
+@import 'core/core.scss';
+
+.gray-bg {
+  background-color: $white;
+
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: auto;
+  position: relative;
+  padding: 4rem 2.7rem;
+
+}
+
+.first-bg-screen .container {
+  padding: 0;
+}
+
+.first-screen {
+  height: 678px;
+  overflow-y: hidden;
+  position: relative;
+
+
+}
+
+
+.basic-title {
+  @include title_h1;
+  text-transform: uppercase;
+  position: relative;
+  display: inline;
+  z-index: 0;
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    min-width: 350px;
+    width: 120%;
+    height: 15px;
+    background-color: $light-peach;
+
+  }
+}
+
+.main-button {
+  @include main-button;
+  cursor: pointer;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    top: calc(50% - 6px);
+    right: 20%;
+    border-top: 2px solid $white;
+    border-right: 2px solid $white;
+    transform: rotate(45deg);
+    transition: .7s;
+    opacity: 0;
+
+  }
+
+  &:hover {
+    &:before {
+      right: 15%;
+      opacity: 1;
+    }
+  }
+
+
+}
+
+body {
+  position: relative;
+}
+
+.filter-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: 0.7;
+  display: none;
+  
+
+}
+
+.main-popup {
+  width: 80%;
+  height: 50vh;
+  margin: auto;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  display: none;
+  justify-content: space-around;
+  border: 1px solid black;
+  box-shadow: 1px 1px 1px 10px #000;
+  border-radius: 20px;
+  align-items: center;
+
+
+  h2 {
+    @include title_h1;
+    width: 40%;
+    text-align: center;
+  }
+
+  form {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+
+    input {
+      margin: 1rem 0;
+      width: 100%;
+      text-align: center;
+      padding: 1rem 0;
+      border-radius: 50px;
+      background-color: $white;
+      @include font-base;
+      text-align: center;
+
+    }
+
+    input[type="submit"] {
+      @include main-button;
+      padding: 0;
+      width: 100%;
+    }
+
+
+  }
+}

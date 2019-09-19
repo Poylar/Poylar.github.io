@@ -1,0 +1,26 @@
+.sub-title {
+  @include title_h2;
+}
+
+.social-block {
+  display: flex;
+  justify-content: space-between
+
+
+
+}
+
+
+
+.social-block_item {
+  
+  img {
+    display: block;
+    -webkit-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+}
