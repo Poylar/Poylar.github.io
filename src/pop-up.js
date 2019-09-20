@@ -1,6 +1,7 @@
 let btnTriggerPopUp = document.querySelectorAll('.main-button');
 let popUpBox = document.getElementById('popup');
 let popUpFilter = document.getElementById('filterpop');
+let firegun = [];
 const speedSettings = 5;
 btnTriggerPopUp.forEach((btnTriggerPopUp) => {
   btnTriggerPopUp.addEventListener('click', () => {
